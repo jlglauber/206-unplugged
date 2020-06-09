@@ -106,24 +106,55 @@ textarea {
       align-items: center;
       flex-flow: row wrap;
     }
+
+    header  {
+      padding: 15px 0;
+    }
     
     header .content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      width: 100%;
+      max-width: 360px;
+      margin: 0;
     }
     
+    .header-divider  {
+      margin: 10 px 0 20px 0;
+    }
+
     header nav{
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-flow: row wrap;
+      width: 60%;
     }
+  
 
     header nav ul{
       display: flex;
       justify-content: space-around;
+      width: 100%;
+    }
+
+    header nav li{
+      margin-right: 60px;
+    }
+
+    footer  {
+      flex-direction: column;
+    }
+
+    footer .contact {
+      margin-bottom: 50px;
+    }
+
+    footer .content-wrapper{
+      width: 55%;
+      margin: 50px 0;
     }
 
     footer .social-icons  {
@@ -138,13 +169,30 @@ textarea {
       align-items: center;
     }
 
+    footer p  {
+      margin: 0;
+    }
+
+    footer .copyright {
+      margin: 20px 0;
+    }
+
     /*-------------------Mobile Styles - Homepage -----------------*/
     /* Hero Area */
     .hero-area {
       display:flex;
       justify-content: center;
       flex-flow: row wrap;
+      padding: 18px 0;
     }
+
+    .hero-area .content-wrapper{
+      width: 100%;
+    }
+    h1  {
+      padding: 50px 40px 0 20px;
+    }
+    
 
     /* Aside */
     aside {
@@ -153,6 +201,13 @@ textarea {
       align-items: center;
       flex-flow: row wrap;
     }
+    aside .content-wrapper{
+      width: 89%;
+    }
+    h3  {
+      padding: 50px 40px 0 20px;
+    }
+    
 
     /* Features */
     .features {
@@ -161,11 +216,29 @@ textarea {
       flex-flow: row wrap;
     }
 
+    .features .content-wrapper  {
+      width: 85%;
+    }
+
+    .features .article {
+      width: 63%;
+      margin: 30px 0;
+    }
+    
+
     .features .features-items {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+    }
+
+    .features h2  {
+      margin-bottom: 60px;
+    }
+
+    .features p{
+      margin: 0;
     }
 
     /* Reviews */
@@ -174,6 +247,15 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+    }
+
+    .reviews h2 {
+      margin-bottom: 40px;
+    }
+
+    .reviews h3 {
+      width: 55%;
+      margin: 20px 0;
     }
 
 /* ==========================================================================
@@ -192,6 +274,9 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
   }
+  .contact-content p  {
+    margin: 0;
+  }
 
 /* ==========================================================================
    FAQ Page
@@ -205,10 +290,19 @@ textarea {
    }
 
    .faq .content-wrapper  {
+     margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+   }
+
+   .faq h2  {
+     margin-bottom: 40px;
+   }
+
+   .faq .content  {
+     margin-bottom: 50px;
    }
   
 /* ==========================================================================
