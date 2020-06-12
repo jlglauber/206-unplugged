@@ -189,9 +189,7 @@ textarea {
     .hero-area .content-wrapper{
       width: 100%;
     }
-    h1  {
-      padding: 50px 40px 0 20px;
-    }
+    
     
 
     /* Aside */
@@ -516,9 +514,60 @@ textarea {
 
 @media only screen and (min-width: 1200px)  {
   /*Desktop styles here*/
-
+.content-wrapper  {
+  max-width: 960px;
 }
 
+/*Hero*/
+.hero-area h1 {
+  width:40%;
+}
+
+/*Aside*/
+aside .content-wrapper  {
+  justify-content: space-around;
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form  {
+  width: 26%;
+}
+
+/*Features*/
+.features h2  {
+  width: 70%;
+}
+.features .article  {
+  flex-basis: 50%;
+}
+
+/*Reviews*/
+.reviews article div  {
+  width:34%;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+   .mission h2,
+   contact-section .content-wrapper h2  {
+     width: 77%;
+   }
+
+   .contact-section .content-wrapper h2 {
+     margin-bottom: 38px;
+   }
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+   .faq h2  {
+    width: 100%;
+   }
+   .faq-content {
+    flex-basis: 35%;
+   }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
