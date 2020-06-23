@@ -260,6 +260,9 @@ textarea {
       display:flex;
       justify-content: center;
       flex-flow: row wrap;
+      background: url('../img/header-image.jpg') center no-repeat #333;
+      background-size: cover;
+
     }
 
     .hero-area .content-wrapper{
