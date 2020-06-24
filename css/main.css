@@ -145,11 +145,11 @@ textarea {
    }
     
    img {
-    max-width: 100%;
+    width: 100%;
    }
     
    figure {
-    
+    margin: 0;
    }
     
    address {
@@ -163,6 +163,7 @@ textarea {
    /* ----------------Base Header - Footer Styles -----------------------*/
     header,
     footer{
+      background-color: #202322;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -179,7 +180,6 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      width: 100%;
       margin: 0;
     }
     
@@ -190,8 +190,12 @@ textarea {
       background: #3a3a3a;
     }
 
-    figure  {
-      width: 30%;
+    header figure   {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
     }
 
     header nav{
@@ -212,8 +216,7 @@ textarea {
       width: 100%;
     }
 
-    header nav li{
-      margin-right: 60px;
+    header nav li {
       font-size: 1.125em;
     }
 
@@ -255,6 +258,7 @@ textarea {
     
 
     /*-------------------Mobile Styles - Homepage -----------------*/
+    
     /* Hero Area */
     .hero-area {
       display:flex;
@@ -262,12 +266,11 @@ textarea {
       flex-flow: row wrap;
       background: url('../img/header-image.jpg') center no-repeat #333;
       background-size: cover;
+      min-height: 500px;
 
     }
 
-    .hero-area .content-wrapper{
-      width: 100%;
-    }
+  
     .hero-area h1 {
       font-size: 2.25em;
       font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -283,7 +286,7 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      background: #527158;
+      background-color: #527158;
     }
    aside .form  {
      margin-top: 30px;
@@ -316,6 +319,10 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      background: url('../img/background-image.jpg') center no-repeat #333;
+      background-size: cover;
+      background-position: center;
+
     }
 
 
@@ -347,7 +354,7 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      background: #2a423a;
+      background-color: #2a423a;
     }
 
     .reviews h2 {
@@ -363,11 +370,7 @@ textarea {
 /* ==========================================================================
    About Page
    ========================================================================== */
-  img {
-    width: 69%;
-    padding: 10px 50px;
-   
-  }
+
   .mission  {
     display: flex;
     justify-content: center;
@@ -388,14 +391,10 @@ textarea {
 
 
 
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-   img {
-    width: 69%;
-    padding: 10px 50px;
-   }
-
    .faq {
      background-color: #527158;
     display: flex;
@@ -548,7 +547,7 @@ input[type=button] {
     margin: 100px 0;
   }
   h2  {
-    font-size: 2.25 em;
+    font-size: 2.25em;
     line-height: 1.333;
   }
   h3  {
@@ -583,6 +582,10 @@ input[type=button] {
   }
 
   /*Hero Area*/
+  .hero-area  {
+    min-height: 600px;
+  }
+
   .hero-area h1   {
     font-size: 3em;
     line-height: 1;
@@ -599,15 +602,15 @@ input[type=button] {
 
   aside .content-wrapper .form-description, 
   aside .content-wrapper .form  {
-    width:40%;
+    width: 40%;
     margin: 0;
   }
 
-  input {
-    margin-bottom: 15px;
+  /*Features*/
+  .features h2  {
+    margin-bottom: 20px;
   }
 
-  /*Features*/
   .features article {
     display: flex;
     justify-content: center;
@@ -617,7 +620,7 @@ input[type=button] {
   }
 
   .features .features-item-description  {
-    width:50%;
+    width: 62%;
   }
 
   /*Reviews*/
@@ -628,7 +631,7 @@ input[type=button] {
   .reviews h2   {
     width: 85%;
   }
-
+  .reviews article figure,
   .reviews article div  {
     width:49%;
   }
@@ -741,7 +744,7 @@ h4  {
 
 /*Hero*/
 .hero-area h1 {
-  width:72%;
+  width: 80%;
   font-size: 3.75em;
 }
 
@@ -780,6 +783,7 @@ aside .content-wrapper .form  {
 footer h4   {
   font-size: 1.875em;
 }
+
 .contact,
 .social   {
   height: 124px;
