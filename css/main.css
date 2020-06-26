@@ -779,13 +779,20 @@ aside .content-wrapper .form  {
 
 /*Features*/
 
+.features i   {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 .features h2  {
   width: 90%;
+  margin-bottom: 90px;
 }
 .features .article  {
   flex-basis: 33%;
 }
-
+.features-items article {
+  margin-bottom: 60px;
+}
 /*Reviews*/
 .reviews h2   {
   padding-bottom: 50px;
